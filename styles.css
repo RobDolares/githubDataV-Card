@@ -1,0 +1,38 @@
+html{
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0 20%;
+}
+
+header {
+  height: 70px;
+}
+
+main{
+  display: flex;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.basics {
+  flex: 1 0 30%;
+}
+
+.story {
+  border-left: 2px solid rgba(200, 200, 200, .5);
+  flex: 1 0 40%;
+}
+
+.story > p {
+  padding-left: 20px;
+
+}
+
+.avatar {
+  flex: 1 0 20%;
+}
