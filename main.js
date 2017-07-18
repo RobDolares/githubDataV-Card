@@ -12,15 +12,16 @@ function reqListener (){
   `;
   let container = document.querySelector("main");
   container.innerHTML = `
+  <div class="zigzag cont-zag"></div>
   <div class="card-container">
     <div class="basics">
       <h2>The Basics</h2>
       <ul>
         <li><span>Name:</span> ${data.name}</li>
-        <li><span>GitHub URL:</span> <span class="list-ul">${data.html_url}</span></li>
+        <li><span>GitHub URL:</span> <span class="list-ul"><a href="${data.html_url}">${data.html_url}</a></span></li>
         <li><span>Email:</span> ${data.email}</li>
-        <li><span>Company:</span> ${data.scompany}</li>
-        <li><span>Website:</span> <span class="list-ul">${data.blog}</span></li>
+        <li><span>Company:</span> ${data.company}</li>
+        <li><span>Website:</span> <span class="list-ul"><a href="https://${data.blog}">${data.blog}</a></span></li>
       </ul>
     </div>
     <div class="story">
